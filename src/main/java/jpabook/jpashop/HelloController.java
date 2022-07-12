@@ -1,0 +1,17 @@
+package jpabook.jpashop;
+
+import org.springframework.stereotype.*;
+import org.springframework.ui.*;
+import org.springframework.web.bind.annotation.*;
+
+@Controller
+public class HelloController {
+	
+	@GetMapping("hello")
+	public String hello(Model model) {
+		model.addAttribute("data", "hello!!");
+		
+		return "hello";
+	}
+
+}
