@@ -16,7 +16,7 @@ public class itemRepository {
 	private final EntityManager em;
 	
 	
-	public void save(Item item) {
+	public void saveItem(Item item) {
 		if(item.getId() == null) {
 			em.persist(item);
 		}else {
